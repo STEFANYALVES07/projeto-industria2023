@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAG  GLAMOUR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- cabeçalho-->
+    <div class="logo">
+        <h1>SAAG GLAMOUR</h1>
+    </div>
+
+    <div class="login">
+    <form>
+        <h3>Faça seu login</h3>
+        <input type="email" name="email" placeholder="Digite seu email..." />
+         <input type="password" name="senha" placeholder="Digite sua senha..." />
+         <input type="submit" name="acao" value="Enviar" />
+    </form>
+</div>
+    <script>
+        var email = document.getElementById('email');
+
+        email.addEventListener('focus',()=>{
+                 email.style.borderColor = "#e7516a"
+        });
+        email.addEventListener('blur',()=>{
+            email.style.borderColor = "#e7516a";
+        });
+
+        
+        password.addEventListener('focus',()=>{
+                 email.style.borderColor = "#e7516a"
+        });
+        password.addEventListener('blur',()=>{
+            email.style.borderColor = "#e7516a";
+        });
+
+
+    </script>
+</body>
+</html>
+
