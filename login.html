@@ -5,23 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SAAG  GLAMOUR</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <!-- cabeçalho-->
     <div class="logo">
         <h1>SAAG GLAMOUR</h1>
     </div>
-
+    <img src="icon.png" class="icon">
     <div class="login">
     <form>
         <h3>Faça seu login</h3>
-        <input type="email" name="email" placeholder="Digite seu email..." />
-         <input type="password" name="senha" placeholder="Digite sua senha..." />
-         <input type="submit" name="acao" value="Enviar" />
-    </form>
+        <input type="email" name="email" placeholder="Digite seu email..." id="email">
+         <input type="password" type="password" placeholder="Digite sua senha..." id="senha">
+         <button onclick="validacao()"  class="btn" type="submit" name="acao" value="Enviar">
+Logar</button>    </form>
 </div>
     <script>
+        function validacao()   {
+            var email = document.getElementById("email");
+            var senha = document.getElementById("senha");
+            var key={
+                'email': ["aninha123gmail.com"],
+                'senha': ['julia'],
+            }
+            if(senha.value == key.senha[0])
+            if(email.value == key.email[0]){
+                    window.location.href = "estoque ana.html";
+                }
+            else{
+                window.alert("Sua senha ou email esta incorreto!");
+            }else{
+                window.alert("Sua senha ou email esta incorreto!")
+            }
+        }
         var email = document.getElementById('email');
 
         email.addEventListener('focus',()=>{
@@ -39,6 +56,9 @@
             email.style.borderColor = "#e7516a";
         });
 
+
+    </script>
+    <script>
 
     </script>
 </body>
