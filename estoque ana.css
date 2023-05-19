@@ -1,0 +1,55 @@
+html, body{
+    background-color:#FEEFEF;
+    margin: 0px;
+    border: 0px
+}
+.logo{
+    background-color: #F3B9B9;
+    padding: 15px;
+    height: 100px;
+    width: 2103px;
+    margin: 0px;
+    border: 0px;
+    font-size: 20px;
+    text-align: center;
+    font-family:EB Garamond;
+}
+.ESTOQUE{
+     text-align: center;
+     font-size: 25px;
+     font-family:EB Garamond;
+     border-bottom: 15px  solid #F3B9B9;
+    
+}
+.h1_cass{
+    text-align: center;
+}
+.lua.png{
+     text-align: justify;
+     box-sizing: border-box;
+     text-align: center;
+
+}
+.vult{
+    background-color: #FFA7B6;
+    padding: 170px;
+    height: 300px;
+    width: 150px;
+    border-radius: 10px;
+    position: absolute;
+    left: 200px;
+    margin-top: 70px;
+}
+.Delineador{
+position: absolute;
+left: 30%;
+right: 30%;
+
+}
+
+.Maquiagem {
+position: absolute;
+left: 12%;
+margin-top: 90px;
+
+}
