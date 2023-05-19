@@ -1,0 +1,82 @@
+html, body{
+    margin: 0px;
+    border: 0px;
+    background-color: #FEEFEF;
+    text-align: center;
+}
+.logo{
+    text-align: center;
+    padding: 10px;
+    background-color: #F3B9B9;
+}
+
+.logocadastro{
+    margin-left:67%;
+    margin-top: -47px;
+}
+    
+.Cadastro{
+   margin-left: 18px;
+   margin-top: 50px;
+   font-size: 25px;
+   font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   background-color: #F3B9B9;
+   display: inline-block;
+   text-align: center;
+   border-radius: 20px;
+}
+.h3_cadastro{
+    margin:0px;
+    text-align: center;
+}
+
+.input_produtos{
+    height: 30px;
+    width: 365px;
+    margin-left: 180px;
+    margin-top: 30px;
+    border-radius: 20px;
+    border-color: #F3B9B9;
+    
+}
+
+.botao{
+    border-radius: 20px;
+    border-color: #F3B9B9;
+    position: absolute;
+    left: 60%;
+    margin-top: 35px;
+    background-color: #F3B9B9;
+}
+
+.cadastrar{
+    height: 50px;
+    border-radius: 20px;
+    border-color: #F3B9B9;
+    text-align: center;
+    margin-top: 70px;
+    width: 200px;
+    left: 45%;
+    position: absolute;
+    background-color: #F3B9B9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+input{
+    position: absolute;
+    left: 31%;
+}
+
+h3{
+    text-align: center;
+}
+.result_div{
+    margin-top:170px;
+    right: 45%;
+    top: 70%;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+}
