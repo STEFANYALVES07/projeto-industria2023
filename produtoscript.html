@@ -1,0 +1,63 @@
+<script>
+    function agendamento() {
+
+        const form = document.querySelector('form');
+
+        const consultasContainer = document.querySelector('#consultas-container');
+
+        let consultas = [];
+
+
+        form.addEventListener('submit', (event) => {
+            
+            event.preventDefault();
+
+            const consulta = {
+                nome: form.querySelector('#name').value,
+                quantidademinima: form.querySelector('#quantidademinima').value,
+                quantidadeatual: form.querySelector('#quantidadeatual')
+            };
+
+            consultas.push(consulta);
+
+            form.reset();
+
+            exibirConsultas();
+        });
+
+        function exibirConsultas() {
+
+            let consultasHTML = '';
+
+            consultas.forEach((consulta) => {
+                consultasHTML += `
+    <div class="AA">
+    <h3>Produto:</h3> <br>
+    </div>
+      <div class ="resultado">
+        <p><strong>Nome:</strong> ${consulta.nome}</p>
+        <p><strong>Quantidade mínima:</strong> ${consulta.quantidademinima}</p>
+        <p><strong>Quantidade atual:</strong> ${consulta.quantidadeatual}</p>
+      </div>
+    `;
+            });
+
+            consultasContainer.innerHTML = consultasHTML;
+
+        }
+    }
+</script>
+
+<form onsubmit="agendamento(); return false;">
+    <label for="name">Nome:</label><br>
+    <input type="text" id="name" name="name" required> <br>     
+    <br>
+    <label for="quantidademinima">Quantidade mínima;</label><br>
+    <input type="text" id="quantidademinima" name="quantidademinima" required> <br>
+    <br>
+    <label for="quantidadeatual">Quantidade atual:</label><br>
+    <input type="text" id="quantidadeatual" name="quantidadeatual" required> <br>
+    
+    <br>
+    <br> <button type="submit">Adicionar</button>
+</form>
