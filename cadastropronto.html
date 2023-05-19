@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	 <link rel="stylesheet" href="style.css">
+    
+	 <title>SAAG GLAMOUR COSMETICOS</title>
+
+</head>
+
+    <body>
+         <!-- cabeçalho -->
+         
+            <div class="logo">
+                <h1>SAAG GLAMOUR</h1>
+            </div>
+
+            <div class="logocadastro">
+                <img src="imagens.img/logocadastro.png">
+            </div>
+
+            <div class="Cadastro">
+                <h3 class="h3_cadastro">Cadastro dos produtos</h3>
+            </div>
+            <div class="produtos">
+                <input class="input_produtos" type="text" id="nome_produto"placeholder="Nome do produto">
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="produtos">
+                <input class="input_produtos" type="text" id="lote_produto" placeholder="Lote do produto">
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div class="produtos">
+                <input class="input_produtos" type="text" id="quantidade_produto" placeholder="Quantidade mínima no estoque">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div>
+                <input class="input_produtos" type="text" id="quantidade_atual" placeholder="Quantidade atual">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <div>
+            <button type="button" onclick="cadastro()" class="cadastrar">Cadastrar</button>
+            </div>
+            <div class="result_div">
+                <p id="result_1"></p>
+                <p id="result_2"></p>
+                <p id="result_3"></p>
+                <p id="result_4"></p>
+            </div>
+            <script>
+                function cadastro(){
+    var produto = document.getElementById("nome_produto");
+    var lote = document.getElementById("lote_produto");
+    var quantidade = document.getElementById("quantidade_produto");
+    var quantidade_atual = document.getElementById("quantidade_atual");
+    var result1 = document.getElementById("result_1");
+    var result2 = document.getElementById("result_2");
+    var result3 = document.getElementById("result_3");
+    var result4 = document.getElementById("result_4");
+
+
+
+    result1.innerText = "O produto é "  + produto.value;
+   result2.innerText = "O lote possui " + lote.value + "produtos";
+   result3.innerText = "A quantidade de produto é " + quantidade.value ;
+   result4.innerText = "A quantidade atual é" + quantidade_atual.value + "produtos";
+
+                }
+            </script>
+
+        
+    </body>
+</html>
