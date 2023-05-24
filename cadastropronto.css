@@ -80,3 +80,17 @@ h3{
     
 
 }
+
+.pronto{
+    height: 50px;
+    border-radius: 20px;
+    border-color: #F3B9B9;
+    text-align: center;
+    margin-top: 70px;
+    width: 200px;
+    left: 45%;
+    position: absolute;
+    background-color: #F3B9B9;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
